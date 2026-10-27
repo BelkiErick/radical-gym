@@ -20,3 +20,6 @@ html{scroll-padding-top:20px}body{background:#000}.sr-only{position:absolute;wid
 .membership{background:#18161b}.membership:before{display:none}footer{background:#1c1141}.section-label{font-size:11px}.club{padding-top:90px}
 @media(max-width:767px){.stacked-title{top:2vh}.stacked-title h1,.stacked-title .title-layer{font-size:24vw;letter-spacing:.005em}.layer-back{transform:translateY(18px)}.layer-gap{transform:translateY(12px)}.layer-middle{transform:translateY(6px)}.stage-words{padding:0 3vw}.word-column{gap:4px}.word-column span{font-size:clamp(1.25rem,5.6vw,3rem)}.radical-marquee{padding:24px 0}.stage-character img{height:105%;max-height:105%}footer{padding-bottom:28px}}
 @media(prefers-reduced-motion:reduce){.radical-track{animation:none}.word-column span{transition:none;transform:none!important}.word-column{opacity:1!important}.marquee-toggle{display:none}}
+/* Owner portrait: transparent artwork based on the photograph supplied by the owner of this project. */
+.stage-character img{height:96svh;max-height:88%;min-height:0;width:auto;max-width:none;object-fit:contain}
+@media(max-width:767px){.stage-character img{height:92svh;max-height:88%;min-height:0;width:auto}}

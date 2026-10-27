@@ -22,3 +22,7 @@ Recursos proporcionados en la referencia del usuario:
 - Bamboly Demo: https://motionsites.org/assets/prompt-media/c2d5cb94eece9bbb06e2.woff2
 
 Verificación: 320, 390, 768 y 1440 px sin overflow; título único y dentro del viewport; fuente y personaje cargados; ficha de producto y pausa funcionan; sin errores de consola. La ilustración es decorativa y no representa instalaciones ni personal del gimnasio.
+
+## Retrato del dueño
+
+Se sustituye el personaje ilustrado de referencia por `assets/radical-owner.png`, generado a partir de la foto facilitada por el usuario. Fondo transparente y acabado 3D sutil; tamaño ajustado a escritorio y móvil. El original de la foto no se publica. Verificación visual a 1440 y 390 px, sin desbordamiento.

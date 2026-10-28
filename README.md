@@ -1,17 +1,28 @@
 # Radical Gym
 
-Sitio estático de Radical Gym, Pifo. HTML, CSS y JavaScript sin dependencias de producción.
+Web estática de Radical Gym (Pifo), en HTML, CSS y JavaScript. No requiere instalar paquetes ni compilar.
 
 ## Vista local
 
-Ejecutar `node serve.mjs` y abrir http://127.0.0.1:4173.
+Desde esta carpeta, ejecutar `node serve.mjs` y abrir http://127.0.0.1:4173.
 
-## Contenido y diseño
+## Archivos
 
-Estética editorial deportiva: fondo carbón, naranja y violeta de marca, tipografía condensada, fotografía real y transiciones suaves. Portada, gimnasio, membresía, catálogo, horarios y preguntas frecuentes. Membresía: USD 30/mes. Camisetas: USD 15/unidad. Consultas y reservas mediante enlaces a Instagram; no hay pagos ni pedidos procesados en la web.
+- `dist/`: web completa lista para publicar, incluidas imágenes y fuentes locales.
+- `serve.mjs`: servidor para la vista previa local.
+- `DESIGN.md`: contenido y referencias del diseño actual.
 
-Fotos procedentes de publicaciones de @radicalapparel2 y @radical_clubpifo facilitadas por el usuario. Conservar atribución. Disponibilidad y tallas se confirman directamente con la marca.
+## Publicación futura
 
-## Verificación
+Publicar el contenido de `dist/` en un alojamiento de archivos estáticos.
+Para importarlo en Vercel: usar esta carpeta como raíz del proyecto, seleccionar Other como framework, dejar vacío el comando de compilación y establecer `dist` como directorio de salida. No necesita variables de entorno ni dependencias.
 
-Comprobar sintaxis con `node --check dist/app.js`. Revisar navegación móvil, diálogo de producto con Escape, precios, imágenes y enlaces. El sitio respeta movimiento reducido y funciona sin JavaScript salvo el menú compacto y las fichas ampliadas.
+## Contenido
+
+Membresía: USD 30/mes. Camisetas: USD 15/unidad. Consultas mediante Instagram, sin procesamiento de pagos en la web. Tallas y disponibilidad se confirman con la marca.
+
+Fotos y diseños: Radical Club / Radical Apparel. Retrato de portada generado a partir de la foto facilitada por el usuario.
+
+## Comprobaciones
+
+Ejecutar `node --check dist/app.js` y `node --check dist/reference.js`. Revisar vista móvil, fichas de producto, pausa de la cinta, precios y enlaces.

@@ -26,3 +26,16 @@ Fotos y diseños: Radical Club / Radical Apparel. Retrato de portada generado a 
 ## Comprobaciones
 
 Ejecutar `node --check dist/app.js` y `node --check dist/reference.js`. Revisar vista móvil, fichas de producto, pausa de la cinta, precios y enlaces.
+
+## GitHub y GitHub Pages
+
+Repositorio: https://github.com/BelkiErick/radical-gym
+Web: https://belkierick.github.io/radical-gym/
+
+El código completo está en `main`; GitHub Pages publica la raíz de `gh-pages`, que contiene solo `dist/`.
+Después de guardar los cambios en un commit, actualizar con:
+
+```bash
+git push origin main
+git subtree push --prefix dist origin gh-pages
+```
